@@ -11,6 +11,16 @@ public class Prob1 {
 		String s = scanner.nextLine();
 		
 		/*  구현합니다. */
+		char[] arrayChar = s.toCharArray();
+		int length = arrayChar.length;
+		
+		for( int i = 0; i < length; i++ ) {
+			for( int j = 0; j < i+1; j++ ) {
+				System.out.print( arrayChar[ j ] );
+			}
+			
+			System.out.println( "" );
+		}
 
 		
 		
